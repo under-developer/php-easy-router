@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/url_reference/public_html
+RewriteRule ^(.*)$ /url_reference/public_html/$1 [L]
+Options -Indexes
